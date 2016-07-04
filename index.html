@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -13,6 +13,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1
+/jquery.mobile-1.0a1.min.css" />
+<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>   
+<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js">
+</script>
+<script src="http://jquery.ibm.navitend.com/utils.js"></script>
 	</head>
 	<body>
 
@@ -154,7 +160,22 @@
 								<h2>Contact</h2>
 							</header>
 
+<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="prueba" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
 							<div id="id01"></div>
+
+
+
 
 <script>
 var xmlhttp = new XMLHttpRequest();
@@ -183,7 +204,7 @@ function myFunction(response) {
         "</td></tr>";
     }
     out += "</table>";
-    document.getElementById("id01").innerHTML = out;
+    document.getElementById("prueba").innerHTML = out;
 }
 </script>
                             
